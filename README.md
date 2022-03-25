@@ -1,2 +1,2 @@
 # GLO Project
-[Гипсолит](https://SmiTTR77-GLOProject.github.io/src/ "гипсолит")
+[Гипсолит](https://smittr77.github.io/SmiTTR77-GLOProject.github.io/src/ "гипсолит")
