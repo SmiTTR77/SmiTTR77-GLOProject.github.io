@@ -1,2 +1,2 @@
-# Project
-[Гипсолит](https://smittr77.github.io/Project/ "ver. 0.01")
+# GLO Project
+[Гипсолит](https://SmiTTR77-GLOProject.github.io "ver. 0.01")
