@@ -51,14 +51,31 @@ html {
 body {
 .reg()
 }
-a:hover{
+
+
+// ? ОСТАЛИСЬ ВОПРОСИКИ
+// ------------------------
+a:hover {
 	text-decoration: none;
 }
-button, input, a {
-	&:focus {
-		outline: none;
-	}
-} 
+
+// button, input, a {
+// 	&:focus {
+// 		outline: none;
+// 	}
+// }
+
+button:focus {
+	outline: none;
+}
+input:focus {
+	outline: none;
+}
+a:focus {
+	outline: none;
+}
+// ------------------------
+
 .button {
 	padding: 1rem 3rem;
 	border-radius: 8px;
@@ -68,7 +85,7 @@ button, input, a {
 	text-transform: uppercase;
 	border: none;
 	transition: all 0.2s;
-	&:hover{
+	&:hover {
 		cursor: pointer;
 		background-color: darken(@btn-color, 5%);
 	}

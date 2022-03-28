@@ -26,8 +26,12 @@ body {
 a:hover {
   text-decoration: none;
 }
-button:focus,
-input:focus,
+button:focus {
+  outline: none;
+}
+input:focus {
+  outline: none;
+}
 a:focus {
   outline: none;
 }
