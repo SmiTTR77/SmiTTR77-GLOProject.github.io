@@ -49,6 +49,15 @@ a:focus {
   cursor: pointer;
   background-color: #e6a200;
 }
+section {
+  padding: 10rem 0;
+}
+.section-header {
+  text-align: center;
+  margin: 2rem 0 10rem;
+  font-size: 3.6rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
 /* main */
 .main {
   padding-top: 3rem;
@@ -167,6 +176,46 @@ a:focus {
   line-height: 7rem;
   color: #14111a;
   font-family: 'ProximaNova_bold', sans-serif;
+}
+.features-block {
+  text-align: center;
+}
+.features h3 {
+  font-size: 2rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+  margin-bottom: 3rem;
+}
+.features p {
+  display: inline-block;
+  width: 82%;
+  font-size: 1.4rem;
+}
+.features-img {
+  height: 8rem;
+  margin-bottom: 3rem;
+}
+.features-img img {
+  display: block;
+  margin: 0 auto;
+}
+.arrow {
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+}
+.prev {
+  left: 0;
+  background: url(../img/left-arrow.svg) center no-repeat;
+  background-size: 70%;
+}
+.next {
+  right: 0;
+  background: url(../img/right-arrow.svg) center no-repeat;
+  background-size: 70%;
 }
 @media (min-width: 200px) and (max-width: 1199px) {
   .phone-block {

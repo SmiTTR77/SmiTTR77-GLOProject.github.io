@@ -1,33 +1,34 @@
 /* Fonts family*/
 @font-face {
-font-family: 'ProximaNova_bold';
-src: url('../fonts/ProximaNova-Bold.eot');
-src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
- url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
- url('../fonts/ProximaNova-Bold.woff') format('woff'),
- url('../fonts/ProximaNova-Bold.ttf') format('truetype'),
- url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
-font-weight: bold;
-font-style: normal;
-font-display: swap;
+	font-family: 'ProximaNova_bold';
+	src: url('../fonts/ProximaNova-Bold.eot');
+	src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+		url('../fonts/ProximaNova-Bold.woff') format('woff'),
+		url('../fonts/ProximaNova-Bold.ttf') format('truetype'),
+		url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-font-family: 'ProximaNova_reg';
-src: url('../fonts/ProximaNova-Regular.eot');
-src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
- url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
- url('../fonts/ProximaNova-Regular.woff') format('woff'),
- url('../fonts/ProximaNova-Regular.ttf') format('truetype'),
- url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
-font-weight: normal;
-font-style: normal;
-font-display: swap;
+	font-family: 'ProximaNova_reg';
+	src: url('../fonts/ProximaNova-Regular.eot');
+	src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+		url('../fonts/ProximaNova-Regular.woff') format('woff'),
+		url('../fonts/ProximaNova-Regular.ttf') format('truetype'),
+		url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 
 .reg() {
 	font-family: 'ProximaNova_reg', sans-serif;
 }
+
 .bold() {
 	font-family: 'ProximaNova_bold', sans-serif;
 }
@@ -48,8 +49,9 @@ font-display: swap;
 html {
 	font-size: 10px;
 }
+
 body {
-.reg()
+	.reg()
 }
 
 
@@ -68,12 +70,15 @@ a:hover {
 button:focus {
 	outline: none;
 }
+
 input:focus {
 	outline: none;
 }
+
 a:focus {
 	outline: none;
 }
+
 // ------------------------
 
 .button {
@@ -85,16 +90,24 @@ a:focus {
 	text-transform: uppercase;
 	border: none;
 	transition: all 0.2s;
+
 	&:hover {
 		cursor: pointer;
 		background-color: darken(@btn-color, 5%);
 	}
 }
 
-// // /* Typography */
-// section {
-// 	padding: 10rem;
-// }
+// /* Typography */
+section {
+	padding: 10rem 0;
+}
+
+.section-header {
+	text-align: center;
+	margin: 2rem 0 10rem;
+	font-size: 3.6rem;
+	.bold();
+}
 
 
 /* main */
@@ -105,6 +118,7 @@ a:focus {
 
 	&-content {
 		margin-top: 10rem;
+
 		/* Главный заголовок */
 		h1 {
 			margin-top: 0rem;
@@ -115,11 +129,13 @@ a:focus {
 			.bold();
 		}
 	}
+
 	/* Подзаголовок */
 	&-subtitle {
 		margin-bottom: 4rem;
 		font-size: 2.4rem;
 	}
+
 	/* Зеленый ярлык */
 	span {
 		margin-bottom: 4rem;
@@ -129,32 +145,38 @@ a:focus {
 		color: @light;
 		background-color: @icon-color;
 		text-align: center;
+
 		/* Цифра "300" */
 		strong {
 			font-size: 3rem;
 			.bold()
 		}
 	}
+
 	/* Оплата по факту */
 	&-trigger {
-	display: block;
-	font-size: 2.2rem;
-	text-transform: uppercase;
-	.bold();
+		display: block;
+		font-size: 2.2rem;
+		text-transform: uppercase;
+		.bold();
 	}
+
 	/* Главная форма */
 	&-form {
 		padding: 4rem 5rem;
 		background-color: @light;
 		text-align: center;
+
 		/* Заголовок формы */
 		&-header {
 			margin-bottom: 4rem;
 			font-size: 1.8rem;
+
 			strong {
 				font-size: 1.9rem;
 			}
 		}
+
 		/* Поле для ввода */
 		&-input {
 			display: block;
@@ -163,15 +185,17 @@ a:focus {
 			border: 1px solid @border-input;
 			padding: 1.5rem;
 		}
+
 		/* Подписи к полям */
 		label {
 			position: absolute;
 			padding: 0.5rem;
 			font-size: 1.3rem;
-			left:50%;
+			left: 50%;
 			transform: translateX(-50%) translateY(-50%);
 			background: @light;
 		}
+
 		/* Кнопка отправить заявку */
 		&-btn {
 			display: block;
@@ -179,6 +203,7 @@ a:focus {
 			height: 6rem;
 			font-size: 1.6rem;
 		}
+
 		/* Подпись под кнопкой */
 		small {
 			display: block;
@@ -186,9 +211,10 @@ a:focus {
 			font-size: 1.2rem;
 		}
 	}
-&-text-info {
-	margin: 4rem 0;
-	text-align: center;
+
+	&-text-info {
+		margin: 4rem 0;
+		text-align: center;
 	}
 }
 
@@ -197,20 +223,24 @@ a:focus {
 .header {
 	height: 7rem;
 }
+
 .wrap {
 	display: table;
 	width: 100%;
 	height: 7rem;
+
 	&-block {
 		display: table-cell;
 		vertical-align: middle;
 		text-align: right;
 	}
 }
+
 .phone {
 	&-block {
 		text-align: right;
-		}
+	}
+
 	&-link {
 		display: inline-block;
 		font-weight: 900;
@@ -221,6 +251,60 @@ a:focus {
 		.bold();
 	}
 }
+
+// Оформление Секции с преимуществами
+.features {
+	&-block {
+		text-align: center;
+	}
+
+	h3 {
+		font-size: 2rem;
+		.bold();
+		margin-bottom: 3rem;
+	}
+
+	p {
+		display: inline-block;
+		width: 82%;
+		font-size: 1.4rem;
+	}
+
+	&-img {
+		height: 8rem;
+		margin-bottom: 3rem;
+
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+}
+
+.arrow {
+	top: 50%;
+	transform: translateY(-50%);
+	position: absolute;
+	z-index: 99;
+	width: 2rem;
+	height: 2rem;
+	border: none;
+}
+
+.prev {
+	left: 0;
+	background: url(../img/left-arrow.svg) center no-repeat;
+	background-size: 70%;
+}
+
+.next {
+	right: 0;
+	background: url(../img/right-arrow.svg) center no-repeat;
+	background-size: 70%;
+}
+
+
+
 
 
 // МЕДИА ЗАПРОСЫ
@@ -235,17 +319,21 @@ a:focus {
 	.main {
 		background-position: top right;
 	}
+
 	.main-text-info {
 		color: @light
 	}
+
 	.main-content {
 		text-align: center;
 		margin-top: 3rem;
 	}
+
 	.main-title {
 		padding-top: 4rem;
 		padding-bottom: 4rem;
 	}
+
 	.main-form {
 		text-align: center;
 	}
@@ -254,7 +342,7 @@ a:focus {
 
 // Ущербные моники COL-MD
 @media (min-width: 768px) and (max-width: 991px) {
-		.button {
+	.button {
 		padding: 1rem 2.8rem;
 	}
 }
@@ -265,6 +353,7 @@ a:focus {
 	.header {
 		text-align: center;
 	}
+
 	.wrap-block {
 		text-align: center;
 	}
@@ -276,26 +365,33 @@ a:focus {
 	.header {
 		text-align: center;
 	}
+
 	.wrap-block {
 		text-align: center;
 	}
+
 	.main-content {
 		h1 {
 			font-size: 2.5rem;
 			text-align: center;
 		}
 	}
+
 	.main-form {
 		padding: 2rem;
 	}
+
 	.main-subtitle {
 		font-size: 1.8rem;
 	}
+
 	.main-trigger {
 		color: @light;
 	}
+
 	.main-form-header {
 		font-size: 1.5rem;
+
 		strong {
 			font-size: 1.6rem;
 		}
