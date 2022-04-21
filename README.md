@@ -3,6 +3,6 @@
 #### HomeWork:
 [№16](https://smittr77.github.io/HW16/ "Володя, тебе понравится")
 
-[№26/1](https://smittr77.github.io/HW26/Project/ "26-1")
+[№26/1](https://smittr77.github.io/HW26/Project/src/ "26-1")
 
-[№26/2](https://smittr77.github.io/HW26/Project2/ "26-2")
+[№26/2](https://smittr77.github.io/HW26/Project2/src/ "26-2")
