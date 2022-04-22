@@ -337,6 +337,15 @@ section {
     text-align: right;
     margin-bottom: 2rem;
   }
+  .popup-content {
+    text-align: center;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    padding: 0;
+  }
 }
 @media (min-width: 200px) and (max-width: 991px) {
   .main {
