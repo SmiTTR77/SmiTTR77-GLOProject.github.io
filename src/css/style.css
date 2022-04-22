@@ -244,8 +244,8 @@ section {
 .price-header-btn {
   margin-top: 2.7rem;
   font-size: 16px;
-  width: 336px;
-  height: 66px;
+  max-width: 336px;
+  max-height: 66px;
 }
 .price-block {
   margin-top: 9rem;
@@ -325,8 +325,8 @@ section {
   margin-top: 3rem;
 }
 .list-btn {
-  width: 210px;
-  height: 66px;
+  max-width: 210px;
+  max-height: 66px;
   font-size: 18px;
 }
 @media (min-width: 200px) and (max-width: 1199px) {
