@@ -416,3 +416,12 @@ section {
     font-size: 1.6rem;
   }
 }
+button:hover {
+  animation-name: hinge;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+.animate__pulse {
+  animation-iteration-count: infinite;
+}
