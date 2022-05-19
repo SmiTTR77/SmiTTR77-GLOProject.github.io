@@ -101,6 +101,74 @@ textarea:focus {
 	}
 }
 
+// Оформление форм
+.form {
+
+	/* Поле для ввода */
+	&-input {
+		display: block;
+		margin: 2rem 0;
+		width: 100%;
+		border: 1px solid @border-input;
+		border-radius: 0.5rem;
+		padding: 1.5rem;
+	}
+
+	/* Подписи к полям */
+	&-label {
+		position: absolute;
+		padding: 0.5rem;
+		font-size: 1.3rem;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: @light;
+		.reg();
+	}
+
+	/* Кнопка отправить заявку */
+	&-btn {
+		display: block;
+		width: 100%;
+		height: 6rem;
+		font-size: 1.6rem;
+	}
+}
+
+// Линейная форма
+.form-inline {
+
+	/* Поле для ввода */
+	&-input {
+		display: block;
+		margin: 2rem 0;
+		width: 100%;
+		border: 1px solid @border-input;
+		border-radius: 0.5rem;
+		padding: 1.5rem;
+	}
+
+	/* Подписи к полям */
+	&-label {
+		position: absolute;
+		padding: 0.5rem;
+		font-size: 1.3rem;
+		left: 50%;
+		transform: translate(-50%, 5px);
+		background: @light;
+		.reg();
+	}
+
+	/* Кнопка отправить заявку */
+	&-btn {
+		display: inline-block;
+		max-width: 260px;
+		height: 68px;
+		height: 6rem;
+		font-size: 1.6rem;
+		margin-top: 28px;
+	}
+}
+
 // /* Typography */
 section {
 	padding: 10rem 0;
@@ -197,34 +265,6 @@ section {
 			strong {
 				font-size: 1.9rem;
 			}
-		}
-
-		/* Поле для ввода */
-		&-input {
-			display: block;
-			margin: 2rem 0;
-			width: 100%;
-			border: 1px solid @border-input;
-			border-radius: 0.5rem;
-			padding: 1.5rem;
-		}
-
-		/* Подписи к полям */
-		label {
-			position: absolute;
-			padding: 0.5rem;
-			font-size: 1.3rem;
-			left: 50%;
-			transform: translateX(-50%) translateY(-50%);
-			background: @light;
-		}
-
-		/* Кнопка отправить заявку */
-		&-btn {
-			display: block;
-			width: 100%;
-			height: 6rem;
-			font-size: 1.6rem;
 		}
 
 		/* Подпись под кнопкой */
@@ -392,6 +432,7 @@ section {
 
 // СЕКЦИЯ С ОТЗЫВАМИ
 .feedback {
+	position: relative;
 	background: url(../img/feedback/bgf.png) no-repeat center;
 	background-size: cover;
 
@@ -453,7 +494,29 @@ section {
 			border: none;
 		}
 	}
+
+	// Форма отзывы
+	&-form {
+		margin-top: 6rem;
+		text-align: center;
+		background-color: @light;
+		padding: 4rem 10rem;
+
+		h3 {
+			font-size: 2.2rem;
+			.bold();
+			margin-bottom: 4rem;
+		}
+	}
 }
+
+.hand {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	max-width: 30rem;
+}
+
 
 // ОФОРМЛЕНИЕ МОДАЛЬНЫХ ОКОН
 .popup {
@@ -525,6 +588,14 @@ section {
 		background-color: @light;
 		padding: 0;
 	}
+
+	.feedback-form {
+		padding: 3rem 5rem;
+	}
+
+	.fotorama {
+		margin-bottom: 3rem;
+	}
 }
 
 
@@ -563,8 +634,23 @@ section {
 	.price-block {
 		margin-top: 1.5rem;
 	}
-}
 
+	.form-inline-label {
+		transform: translate(-50%, -50%);
+	}
+
+	.hand {
+		display: none;
+	}
+
+	.feedback-prev-btn {
+		left: 0;
+	}
+
+	.feedback-next-btn {
+		right: 0;
+	}
+}
 
 // Ущербные моники COL-MD
 @media (min-width: 768px) and (max-width: 991px) {
