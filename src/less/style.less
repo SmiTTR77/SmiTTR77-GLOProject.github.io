@@ -517,8 +517,81 @@ section {
 	max-width: 30rem;
 }
 
+// Схема работы
 
-// ОФОРМЛЕНИЕ МОДАЛЬНЫХ ОКОН
+.scheme {
+	background: #fff url(../img/scheme/hand2.png) bottom right -12rem no-repeat;
+	background-size: 65rem;
+
+	h3 {
+		.bold();
+		font-size: 2.2rem;
+	}
+
+	&-block {
+		img {
+			max-height: 96px;
+		}
+
+		min-height: 30rem;
+	}
+}
+
+// Всё на 100% включено!
+.all-inclusive {
+	background-color: @bg-light;
+
+	.media {
+		min-height: 15rem;
+
+		&-body {
+			h4 {
+				.bold();
+				font-size: 1.6rem;
+			}
+
+			p {
+				font-size: 1.3rem;
+			}
+		}
+	}
+}
+
+.section-header_active {
+	h2 {
+		color: @text2;
+	}
+
+}
+
+.circle {
+	display: inline-block;
+	background-color: @icon-color;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+
+	&-border {
+		display: inline-block;
+		width: 5rem;
+		height: 5rem;
+		border: 2px solid @icon-color;
+		border-radius: 50%;
+		line-height: 4rem;
+		text-align: center;
+		padding: 3px;
+		color: @light;
+		.bold();
+		font-size: 2rem;
+	}
+}
+
+
+
+
+
+
+// !ОФОРМЛЕНИЕ МОДАЛЬНЫХ ОКОН
 .popup {
 	display: none;
 	position: fixed;
@@ -650,6 +723,7 @@ section {
 	.feedback-next-btn {
 		right: 0;
 	}
+
 }
 
 // Ущербные моники COL-MD
@@ -668,6 +742,11 @@ section {
 
 	.wrap-block {
 		text-align: center;
+	}
+
+	.scheme {
+		text-align: center;
+		background: none;
 	}
 }
 
@@ -707,6 +786,11 @@ section {
 		strong {
 			font-size: 1.6rem;
 		}
+	}
+
+	.scheme {
+		text-align: center;
+		background: none;
 	}
 }
 

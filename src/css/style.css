@@ -399,6 +399,56 @@ section {
   left: 0;
   max-width: 30rem;
 }
+.scheme {
+  background: #ffffff url(../img/scheme/hand2.png) bottom right -12rem no-repeat;
+  background-size: 65rem;
+}
+.scheme h3 {
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 2.2rem;
+}
+.scheme-block {
+  min-height: 30rem;
+}
+.scheme-block img {
+  max-height: 96px;
+}
+.all-inclusive {
+  background-color: #f5f5f5;
+}
+.all-inclusive .media {
+  min-height: 15rem;
+}
+.all-inclusive .media-body h4 {
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 1.6rem;
+}
+.all-inclusive .media-body p {
+  font-size: 1.3rem;
+}
+.section-header_active h2 {
+  color: #008100;
+}
+.circle {
+  display: inline-block;
+  background-color: #00be00;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.circle-border {
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  border: 2px solid #00be00;
+  border-radius: 50%;
+  line-height: 4rem;
+  text-align: center;
+  padding: 3px;
+  color: #ffffff;
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 2rem;
+}
 .popup {
   display: none;
   position: fixed;
@@ -521,6 +571,10 @@ section {
   .wrap-block {
     text-align: center;
   }
+  .scheme {
+    text-align: center;
+    background: none;
+  }
 }
 @media (min-width: 200px) and (max-width: 575px) {
   .header {
@@ -547,6 +601,10 @@ section {
   }
   .main-form-header strong {
     font-size: 1.6rem;
+  }
+  .scheme {
+    text-align: center;
+    background: none;
   }
 }
 button:hover {
