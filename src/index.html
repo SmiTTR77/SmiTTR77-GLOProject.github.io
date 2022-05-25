@@ -609,7 +609,74 @@
 		<img class="problems-girl" src=".//img/problems/women.png" alt="girl">
 
 	</section>
+	<section class="materials">
+		<div class="conteiner">
+			<div class="section-header">
+				<h2>Материалы</h2>
+				<p>Мы работаем только качественными, проверенными временем материалами, следующих производителей:</p>
+			</div>
 
+			<div class="materials-slider">
+				<div class="materials-block wow animate__animated animate__bounceInLeft" data-wow-delay="0.2s"
+					data-wow-duration="1s" data-wow-offset="300">
+					<div class="materials-img">
+						<picture>
+							<img src="../src/img/materials/knauf.png" alt="Knauf">
+						</picture>
+					</div>
+					<h3>Knauf</h3>
+					<p>МП-75 <strong>245</strong> руб/меш</p>
+					<a class="link-z" href="#">Сертификат</a>
+				</div>
+
+				<div class="materials-block wow animate__animated animate__bounceInLeft" data-wow-delay="0.6s"
+					data-wow-duration="1s" data-wow-offset="300">
+					<div class="materials-img">
+						<picture>
+							<img src="../src/img/materials/volma-1.png" alt="Volma">
+						</picture>
+					</div>
+					<h3>Volma</h3>
+					<p>Аква слой <strong>245</strong> руб/меш <br>
+						Гипс актив <strong>245</strong> руб/меш</p>
+					<a class="link-z" href="#">Сертификат</a>
+				</div>
+
+				<div class="materials-block wow animate__animated animate__bounceInLeft" data-wow-delay="1s"
+					data-wow-duration="1s" data-wow-offset="300">
+					<div class="materials-img">
+						<picture>
+							<img src="../src/img/materials/forman-1.png" alt="Forman">
+						</picture>
+					</div>
+					<h3>Forman</h3>
+					<p>Аква слой <strong>245</strong> руб/меш <br>
+						Гипс актив <strong>245</strong> руб/меш</p>
+					<a class="link-z" href="#">Сертификат</a>
+				</div>
+
+				<div class="materials-block wow animate__animated animate__bounceInLeft" data-wow-delay="1.4s"
+					data-wow-duration="1s" data-wow-offset="300">
+					<div class="materials-img">
+						<picture>
+							<img src="../src/img/materials/ceresit-2.png" alt="Ceresit">
+						</picture>
+					</div>
+					<h3>Ceresit</h3>
+					<p>Аква слой <strong>245</strong> руб/меш <br>
+						Гипс актив <strong>245</strong> руб/меш</p>
+					<a class="link-z" href="#">Сертификат</a>
+				</div>
+
+			</div>
+
+			<div class="materials-offer">
+				<p>Вы можете приобрести материалы по оптовым ценам на сайте <a class="link-z" href="#">gicema.ru</a> gicema.ru
+					или по телефону <strong>+7 495 790 69 90</strong></p>
+			</div>
+
+		</div>
+	</section>
 
 
 
@@ -671,6 +738,36 @@
 
 			// Слайдер с преимуществами
 			$('.features-slider').slick({
+				infinite: true,
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				responsive: [
+					{
+						breakpoint: 991,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 2,
+							autoplay: true,
+							autoplaySpeed: 5000,
+							prevArrow: '<button class="prev arrow"></button>',
+							nextArrow: '<button class="next arrow"></button>'
+						}
+					},
+					{
+						breakpoint: 767,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							autoplay: true,
+							autoplaySpeed: 3000,
+							prevArrow: '<button class="prev arrow"></button>',
+							nextArrow: '<button class="next arrow"></button>'
+						}
+					}
+				]
+			});
+
+			$('.materials-slider').slick({
 				infinite: true,
 				slidesToShow: 4,
 				slidesToScroll: 1,

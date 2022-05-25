@@ -495,8 +495,69 @@ section {
 .problems-list_bad ul li::before {
   background: url(../img/problems/cancel.png) center no-repeat;
 }
+.problems-list_good {
+  border-color: #008100;
+}
 .problems-list_good ul li::before {
   background: url(../img/problems/checked.png) center no-repeat;
+}
+.materials {
+  background: url(../img/materials/bg-m.png) no-repeat center;
+}
+.materials-block {
+  display: inline-block;
+  text-align: center;
+  min-height: 30rem;
+}
+.materials h3 {
+  font-size: 2rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+  margin-bottom: 3rem;
+}
+.materials p {
+  display: inline-block;
+  width: 82%;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.materials-img {
+  height: 18rem;
+  margin-bottom: 3rem;
+}
+.materials-img img {
+  display: block;
+  margin: 0 auto;
+}
+.materials a {
+  text-decoration: none;
+}
+.materials .linl-z:hover {
+  color: #008b00;
+}
+.materials-offer {
+  display: block;
+  text-align: center;
+  margin-top: 4rem;
+}
+.arrow {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+}
+.prev {
+  left: 0;
+  background: url(../img/left-arrow.svg) center no-repeat;
+  background-size: 70%;
+}
+.next {
+  right: 0;
+  background: url(../img/right-arrow.svg) center no-repeat;
+  background-size: 70%;
 }
 .popup {
   display: none;
