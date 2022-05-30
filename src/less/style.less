@@ -45,6 +45,7 @@
 @light: #fff;
 @border-input: #e1e1e1;
 @problems-color: #e8e8e8;
+@bg-upsell: #286b0a;
 
 /* Basic Setting*/
 html {
@@ -656,6 +657,7 @@ section {
 // Материалы
 
 .materials {
+	padding: 0;
 	background: url(../img/materials/bg-m.png) no-repeat center;
 
 	&-block {
@@ -724,6 +726,95 @@ section {
 	background: url(../img/right-arrow.svg) center no-repeat;
 	background-size: 70%;
 }
+
+// ТУР
+
+.tour {
+	background: @light url(../img/tour/tour-bg.png ) center center no-repeat;
+	background-size: cover;
+
+	&-content {
+		margin-top: 10rem;
+
+		/* Главный заголовок */
+		h1 {
+			margin-top: 0rem;
+			margin-bottom: 4rem;
+			font-size: 4rem;
+			line-height: 1.45;
+			text-transform: uppercase;
+			.bold();
+		}
+	}
+
+	/* Подзаголовок */
+	&-subtitle {
+		margin-bottom: 4rem;
+		font-size: 2.1rem;
+	}
+
+
+	/* Главная форма */
+	&-form {
+		padding: 4rem 5rem;
+		background-color: @light;
+		text-align: center;
+
+		/* Заголовок формы */
+		&-header {
+			margin-bottom: 4rem;
+			font-size: 1.8rem;
+
+			strong {
+				font-size: 1.9rem;
+			}
+		}
+
+		/* Подпись под кнопкой */
+		small {
+			display: block;
+			margin-top: 1.5rem;
+			font-size: 1.2rem;
+		}
+	}
+
+	&-text-info {
+		margin: 4rem 0;
+		text-align: center;
+	}
+}
+
+// Дополнительные услуги
+
+.upsell {
+	background: @bg-upsell;
+
+	p {
+		margin-bottom: 70px;
+	}
+
+	&-block {
+		text-align: center;
+		color: @light;
+		min-height: 30rem;
+
+		img {
+			display: inline-block;
+			margin-bottom: 2rem;
+			width: 80%;
+			max-width: 30rem;
+		}
+
+		p {
+			margin: 20px 0;
+			font-size: 18px;
+		}
+	}
+}
+
+
+
+
 
 // !ОФОРМЛЕНИЕ МОДАЛЬНЫХ ОКОН
 .popup {
@@ -868,6 +959,11 @@ section {
 
 	.problems-list {
 		min-height: auto;
+	}
+
+	.tour {
+		background: none;
+		background-color: @bg-light;
 	}
 }
 
