@@ -631,7 +631,7 @@ section {
   font-size: 18px;
 }
 .contacts {
-  background: #f5f5f5 url(../img/contact/c-bg.png) center no-repeat;
+  background: #f5f5f5 url(../src/img/contact/c-bg.png) center no-repeat;
   background-size: cover;
 }
 .contacts h2 {
